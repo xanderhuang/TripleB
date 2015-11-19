@@ -437,13 +437,12 @@ html, body {
     position: relative;
     bottom: 2em;
   }
-  background-color: #bdc2c6;
+  background-color: $primary-color;
 }
 
 #alert-index-map {
   margin-top: -1.5em;
   height: 15em;
-
 }
 
 #homepage-hero-signed-in {
