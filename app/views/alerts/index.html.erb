@@ -1,12 +1,14 @@
 <section id='alert-index-page'>
-  <div id='alert-index-map' class='index_position_map'></div>
-  <div class='centered'>
-    <div id='current_user_lat' style="display: none;"><%= current_user.location.latitude %></div>
-    <div id='current_user_lng' style="display: none;"><%= current_user.location.longitude %></div>
+  <div class="google-api-information">
+    <div id='current_user_lat'><%= current_user.location.latitude %></div>
+    <div id='current_user_lng'><%= current_user.location.longitude %></div>
     <% @alerts.each do |alert| %>
-      <div class='latitude' style="display: none;"><%=alert.location.latitude%></div>
-      <div class='longitude' style="display: none;"><%=alert.location.longitude%></div>
+      <div class='latitude'><%=alert.location.latitude%></div>
+      <div class='longitude'><%=alert.location.longitude%></div>
     <% end %>
+  </div>
+
+  <div id="alerts-list">
     <%= image_tag current_user.avatar_url, size: '60', class: 'avatar'%>
     <h2>Alerts in your area</h2>
     <% @alerts.each do |alert| %>
@@ -24,4 +26,6 @@
     </div>
     <% end %>
   </div>
+  
+  <div id='alert-index-map' class='index_position_map'></div>
 </section>
