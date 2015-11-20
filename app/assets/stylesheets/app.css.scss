@@ -85,7 +85,8 @@ html, body {
   .location-icon {
     position: relative;
     left: 6.5em;
-    bottom: 8em;  }
+    bottom: 8em;  
+  }
   h3 {
     color: #faf9df;
     margin-top: -1.5em;
@@ -99,7 +100,8 @@ html, body {
     position: relative;
     color: #f04124;
     bottom: 7.5em;
-    left: 0.5em;  }
+    left: 0.5em;  
+  }
     p {
       font-size: 80%;
       position: relative;
@@ -384,66 +386,7 @@ html, body {
   background-color: #bdc2c6;
 }
 
-#alert-index-page {
-  .small-12 {
-    height: 50px
-  }
-  .location-icon {
-    position: relative;
-    bottom: 5.25em;
-    left: 8em;
-  }
-  h2 {
-    color: white;
-    margin-top: -1.5em;
-    margin-bottom: 0;
-  }
-  .alert-listing {
-    p {
-      font-size: 80%;
-      position: relative;
-      text-align: left;
-      bottom: 4em;
-      left: 3.5em;
-      color: #bdc2c6;
-      width: 75%;
-      margin: 0;
-    }
-    h4 {
-      width: 85%;
-      position: relative;
-      bottom: 3em;
-      margin-bottom: 0;
-      left: 2.5em;
-      text-align: left;
-      color: #00aac8;
-      opacity: 0.7;
-    }
-    .columns {
-    background-color: white;
-    border-radius: 0.25em;
-    margin-top: 1em;
-      .avatar {
-        bottom: 4%;
-        right: 45%;
-      }
-    }
-  }
-  .avatar {
-    border-style: solid;
-    border-color: #faf9df;
-    border-width: 3px;
-    border-radius: 100%;
-    position: relative;
-    bottom: 2em;
-  }
-  background-color: $primary-color;
-}
 
-#alert-index-map {
-  margin-top: -1.5em;
-  height: 15em;
-}
 
 #homepage-hero-signed-in {
 
@@ -508,7 +451,7 @@ html, body {
   vertical-align: middle;
   margin-right: -1em; /* Adjusts for spacing */
 }
-
+/*
 .block {
   text-align: center;
   white-space: nowrap;
@@ -519,21 +462,24 @@ html, body {
   display: inline-block;
   height: 100%;
   vertical-align: middle;
-  margin-right: -0.25em; /* Adjusts for spacing */
-}
+  margin-right: -0.25em;
+}*/
 
 .centered {
   display: inline-block;
   vertical-align: middle;
-  width: 300px;
-  height: 400px;
+  /*width: 300px;*/
+  /*height: 400px;*/
+  float: left;
+  width: 30%;
+  height: 100%;
 }
-#footer {
-  position: relative;
+/*#footer {*/
+  /*position: relative;*/
   /*height: 3em;*/
-  bottom: 0;
+  /*bottom: 0;*/
   /*background-color: #252419;*/
-}
+/*}*/
 
 #password-div {
   padding-bottom: 3em;
