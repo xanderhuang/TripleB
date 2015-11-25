@@ -454,7 +454,7 @@ html, body {
   vertical-align: middle;
   margin-right: -1em; /* Adjusts for spacing */
 }
-/*
+
 .block {
   text-align: center;
   white-space: nowrap;
@@ -466,17 +466,15 @@ html, body {
   height: 100%;
   vertical-align: middle;
   margin-right: -0.25em;
-}*/
+}
 
 .centered {
   display: inline-block;
   vertical-align: middle;
-  /*width: 300px;*/
-  /*height: 400px;*/
-  float: left;
-  width: 30%;
-  height: 100%;
+  width: 300px;
+  height: 400px;
 }
+
 /*#footer {*/
   /*position: relative;*/
   /*height: 3em;*/

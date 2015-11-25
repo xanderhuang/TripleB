@@ -1,70 +1,112 @@
 @import 'foundation_and_overrides';
 
 #alert-index-page {
-  .small-12 {
-    height: 50px
+  background-color: $primary-color;
+  height: 100%;
+
+  #alerts-list {
+    float: left;
+    width: 30%;
+    height: 100%;
+    overflow: auto;
   }
-  .location-icon {
-    position: relative;
-    bottom: 5.25em;
-    left: 8em;
+
+  .alert-details {
+    float: left;
+    width:50%;
+    height:100%;
+    margin-left: 30px;
   }
+
+  #alert-index-map {
+    float: right;
+    height: 100%;
+    width: 70%;
+  }
+  
   h2 {
     color: white;
-    margin-top: -1.5em;
-    margin-bottom: 0;
+    text-align: center;
+  }
+
+  .alert-container {
+    background-color: white;
+    width: 300px;
+    margin: 10px auto;
+    height: 50px;
+    border-radius: 5px;
+  }
+
+  .location-icon {
+    /*position: relative;*/
+/*    bottom: 5.25em;
+    left: 8em;*/
+    height: 31px;
+    width: 22px;
+    float: right;
+    margin: 10px;
   }
   .alert-listing {
+    /*position: relative;*/
     p {
-      font-size: 80%;
-      position: relative;
+      /*font-size: 80%;*/
+      /*position: relative;*/
       text-align: left;
-      bottom: 4em;
-      left: 3.5em;
+      /*bottom: 4em;*/
+      /*left: 3.5em;*/
       color: #bdc2c6;
-      width: 75%;
+      /*width: 100%;*/
       margin: 0;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
     }
-    h4 {
-      width: 85%;
-      position: relative;
-      bottom: 3em;
-      margin-bottom: 0;
-      left: 2.5em;
+    h5 {
+      /*width: 85%;*/
+      /*position: relative;*/
+      /*bottom: 3em;*/
+      margin: 0 auto;
+      /*left: 2.5em;*/
       text-align: left;
       color: #00aac8;
       opacity: 0.7;
     }
-    .columns {
-    background-color: white;
+/*    .columns {
     border-radius: 0.25em;
     margin-top: 1em;
       .avatar {
         bottom: 4%;
         right: 45%;
       }
-    }
+    }*/
+  }
+  .current-user-avatar {
+    border: solid #faf9df 3px;
+    border-radius: 100%;
+    /*bottom: 2em;*/
+    display: block;
+    margin: 25px auto;
+    width: 100px;
+    height: 100px;
   }
   .avatar {
     border-style: solid;
     border-color: #faf9df;
     border-width: 3px;
     border-radius: 100%;
-    position: relative;
-    bottom: 2em;
+    /*position: relative;*/
+    /*bottom: 2em;*/
+    float: left;
+    margin: 3px 0px 3px 10px;
   }
-  background-color: $primary-color;
-  height: 100%;
 }
 
-#alerts-list {
-  float: left;
-  width: 30%;
-  height: 100%;
-}
-
-#alert-index-map {
-  float: right;
-  height: 100%;
-  width: 70%;
+@media only screen and (max-width: 1150px) {
+  #alert-index-page {
+    #alerts-list, #alert-index-map{
+      float: none;
+      width: 100%;
+      height: 50%;
+    }
+  }
 }

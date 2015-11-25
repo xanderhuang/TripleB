@@ -7,25 +7,26 @@
       <div class='longitude'><%=alert.location.longitude%></div>
     <% end %>
   </div>
+  
+  <div id='alert-index-map' class='index_position_map'></div>
 
   <div id="alerts-list">
-    <%= image_tag current_user.avatar_url, size: '60', class: 'avatar'%>
+    <%= image_tag current_user.avatar_url, class: 'current-user-avatar'%>
     <h2>Alerts in your area</h2>
     <% @alerts.each do |alert| %>
     <div class='row alert-listing'>
       <a href='/alerts/<%= alert.id %>'>
-      <div class='small-12 small-centered columns'>
-        <%= image_tag alert.creator.avatar_url, size: '50', class: 'avatar' %>
-        <div style="display: inline;">
-          <h4><%= alert.creator.full_name %></h4>
-          <p><%= alert.description %></p>
+        <div class="alert-container" class='columns'>
+          <%= image_tag alert.creator.avatar_url, size: '44', class: 'avatar' %>
+          <div class="alert-details">
+            <h5><%= alert.creator.full_name %></h5>
+            <p><%= alert.description %></p>
+          </div>
+          <%= image_tag 'location_icon.png', class: 'location-icon' %>
         </div>
-        <%= image_tag 'location_icon.png', size: '22', class: 'location-icon' %>
-      </div>
       </a>
     </div>
     <% end %>
   </div>
-  
-  <div id='alert-index-map' class='index_position_map'></div>
+
 </section>
