@@ -13,7 +13,7 @@
     <section class="top-bar-section">
       <ul class="right">
       <% if signed_in? %>
-        <li><%= link_to current_user.username, user_path(id: current_user.id) %></li>
+        <li class='current-user-avatar'><%= link_to image_tag(current_user.avatar_url, size: '45'), user_path(id: current_user.id) %></li>
         <li><%= link_to "Logout", session_path(id: current_user.id), method: :delete %></li>
       <% else %>
         <li><%= link_to "Sign Up", signup_path %></li>
